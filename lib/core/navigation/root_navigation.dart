@@ -5,6 +5,7 @@ import 'package:windsurf_test/features/home/views/home_page.dart';
 import 'package:windsurf_test/features/favorites/views/favorites_page.dart';
 import 'package:windsurf_test/features/messages/views/messages_page.dart';
 import 'package:windsurf_test/features/settings/views/settings_page.dart';
+import 'package:windsurf_test/core/navigation/app_drawer.dart';
 
 class RootNavigation extends StatefulWidget {
   const RootNavigation({super.key});
@@ -45,10 +46,17 @@ class _RootNavigationState extends State<RootNavigation> {
     
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            child: Icon(Icons.person),
+        leading: Builder(
+          builder: (context) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: const CircleAvatar(
+                child: Icon(Icons.person),
+              ),
+            ),
           ),
         ),
         title: Text(_titles[_selectedIndex]),
@@ -60,6 +68,7 @@ class _RootNavigationState extends State<RootNavigation> {
           const SizedBox(width: 8),
         ],
       ),
+      drawer: const AppDrawer(),
       body: IndexedStack(
         index: _selectedIndex,
         children: _pages,
@@ -79,7 +88,7 @@ class _RootNavigationState extends State<RootNavigation> {
             label: _titles[1],
           ),
           NavigationDestination(
-            icon: const Icon(Icons.favorite_outline),
+            icon: const Icon(Icons.favorite_border),
             selectedIcon: const Icon(Icons.favorite),
             label: _titles[2],
           ),

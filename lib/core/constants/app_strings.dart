@@ -3,7 +3,7 @@ import 'package:windsurf_test/core/translations/app_translations.dart';
 
 class AppStrings {
   // App Name
-  static const String appName = 'Flutter Demo';
+  static const String appName = 'Windsurf App';
   static String getAppName(BuildContext context) => AppTranslations.translate(context, 'appName');
 
   // Navigation Titles
@@ -94,4 +94,8 @@ class AppStrings {
   
   static const String searchLanguage = 'Pesquisar idioma';
   static String getSearchLanguage(BuildContext context) => AppTranslations.translate(context, 'searchLanguage');
+
+  // Drawer
+  static const String logout = 'Sair';
+  static String getLogout(BuildContext context) => AppTranslations.translate(context, 'logout');
 }

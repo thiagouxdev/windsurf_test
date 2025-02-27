@@ -1,6 +1,6 @@
 final Map<String, String> ptTranslations = {
   // App Name
-  'appName': 'Flutter Demo',
+  'appName': 'Windsurf App',
   
   // Navigation Titles
   'home': 'Home',
@@ -42,4 +42,7 @@ final Map<String, String> ptTranslations = {
   'languageSpanish': 'Español',
   'languageChinese': '中文',
   'searchLanguage': 'Pesquisar idioma',
+  
+  // Drawer
+  'logout': 'Sair',
 };

@@ -1,6 +1,6 @@
 final Map<String, String> zhTranslations = {
   // App Name
-  'appName': 'Flutter Demo',
+  'appName': 'Windsurf App',
   
   // Navigation Titles
   'home': '主页',
@@ -42,4 +42,7 @@ final Map<String, String> zhTranslations = {
   'languageSpanish': 'Español',
   'languageChinese': '中文',
   'searchLanguage': '搜索语言',
+  
+  // Drawer
+  'logout': '登出',
 };
