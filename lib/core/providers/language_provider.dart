@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:windsurf_test/core/services/preferences_service.dart';
 
 enum AppLanguage {
   portuguese,
@@ -54,7 +55,17 @@ final languageProvider = StateNotifierProvider<LanguageNotifier, AppLanguage>((r
 });
 
 class LanguageNotifier extends StateNotifier<AppLanguage> {
-  LanguageNotifier() : super(AppLanguage.portuguese);
+  LanguageNotifier() : super(AppLanguage.portuguese) {
+    _loadSavedLanguage();
+  }
 
-  void setLanguage(AppLanguage language) => state = language;
+  Future<void> _loadSavedLanguage() async {
+    final savedLanguage = await PreferencesService.loadLanguage();
+    state = savedLanguage;
+  }
+
+  void setLanguage(AppLanguage language) {
+    state = language;
+    PreferencesService.saveLanguage(language);
+  }
 }
