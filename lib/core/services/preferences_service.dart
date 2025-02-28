@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:windsurf_test/core/providers/language_provider.dart';
+import 'package:basic_app/core/providers/language_provider.dart';
 
 class PreferencesService {
   static const String _themeKey = 'theme_mode';

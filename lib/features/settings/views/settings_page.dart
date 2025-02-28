@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/utils/constants/app_strings.dart';
-import 'package:windsurf_test/features/settings/components/section_header.dart';
-import 'package:windsurf_test/features/settings/views/language_page.dart';
-import 'package:windsurf_test/features/settings/views/theme_page.dart';
+import 'package:basic_app/core/utils/constants/app_strings.dart';
+import 'package:basic_app/features/settings/components/section_header.dart';
+import 'package:basic_app/features/settings/views/language_page.dart';
+import 'package:basic_app/features/settings/views/theme_page.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});

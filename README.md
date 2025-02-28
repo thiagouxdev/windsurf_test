@@ -1,17 +1,38 @@
 # windsurf_test
 
-A new Flutter project.
+Um aplicativo Flutter com estrutura modular e configuração flexível.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Este projeto é um ponto de partida para uma aplicação Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+### Recursos e documentação
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Documentação online](https://docs.flutter.dev/), que oferece tutoriais, exemplos e referência completa da API.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# windsurf_test
+## Funcionalidades Especiais
+
+### Mudança de Nome do Pacote
+
+Este projeto inclui ferramentas para facilitar a mudança do nome do pacote quando necessário:
+
+1. **Arquivo de Configuração Central**: O arquivo `lib/core/config/app_config.dart` contém uma constante `packageName` que define o nome do pacote usado em todos os imports.
+
+2. **Script de Atualização Automática**: Quando você precisar mudar o nome do pacote:
+   - Primeiro, atualize o nome no arquivo `pubspec.yaml`
+   - Execute o script de atualização:
+   ```bash
+   dart tools/update_package_name.dart windsurf_test seu_novo_nome
+   ```
+
+Para mais detalhes, consulte o [README das ferramentas](tools/README.md).
+
+## Estrutura do Projeto
+
+O projeto segue a arquitetura MVVM (Model-View-ViewModel) recomendada pelo time do Flutter, com separação clara de responsabilidades:
+
+- `lib/core/` - Componentes centrais e compartilhados
+- `lib/features/` - Módulos de funcionalidades específicas
+- `lib/core/config/` - Configurações centralizadas do aplicativo

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/providers/language_provider.dart';
-import 'package:windsurf_test/core/translations/translations/en_translations.dart';
-import 'package:windsurf_test/core/translations/translations/es_translations.dart';
-import 'package:windsurf_test/core/translations/translations/pt_translations.dart';
-import 'package:windsurf_test/core/translations/translations/zh_translations.dart';
+import 'package:basic_app/core/providers/language_provider.dart';
+import 'package:basic_app/core/translations/translations/en_translations.dart';
+import 'package:basic_app/core/translations/translations/es_translations.dart';
+import 'package:basic_app/core/translations/translations/pt_translations.dart';
+import 'package:basic_app/core/translations/translations/zh_translations.dart';
 
 class AppTranslations {
   static Map<String, String> getTranslations(AppLanguage language) {

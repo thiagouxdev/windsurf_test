@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/utils/constants/app_strings.dart';
+import 'package:basic_app/core/utils/constants/app_strings.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});

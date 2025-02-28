@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:windsurf_test/core/app/my_app.dart';
+import 'package:basic_app/core/app/my_app.dart';
 
 void main() async {
   // Ensure Flutter is initialized

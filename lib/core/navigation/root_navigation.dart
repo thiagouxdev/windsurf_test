@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/utils/constants/app_strings.dart';
-import 'package:windsurf_test/core/routes/app_routes.dart';
-import 'package:windsurf_test/features/home/views/home_page.dart';
-import 'package:windsurf_test/features/favorites/views/favorites_page.dart';
-import 'package:windsurf_test/features/messages/views/messages_page.dart';
-import 'package:windsurf_test/features/settings/views/settings_page.dart';
-import 'package:windsurf_test/core/navigation/app_drawer.dart';
+import 'package:basic_app/core/utils/constants/app_strings.dart';
+import 'package:basic_app/core/routes/app_routes.dart';
+import 'package:basic_app/features/home/views/home_page.dart';
+import 'package:basic_app/features/favorites/views/favorites_page.dart';
+import 'package:basic_app/features/messages/views/messages_page.dart';
+import 'package:basic_app/features/settings/views/settings_page.dart';
+import 'package:basic_app/core/navigation/app_drawer.dart';
 
 class RootNavigation extends StatefulWidget {
   const RootNavigation({super.key});

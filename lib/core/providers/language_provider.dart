@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:windsurf_test/core/services/preferences_service.dart';
+import 'package:basic_app/core/services/preferences_service.dart';
 
 enum AppLanguage {
   portuguese,
@@ -50,7 +50,8 @@ extension AppLanguageExtension on AppLanguage {
   }
 }
 
-final languageProvider = StateNotifierProvider<LanguageNotifier, AppLanguage>((ref) {
+final languageProvider =
+    StateNotifierProvider<LanguageNotifier, AppLanguage>((ref) {
   return LanguageNotifier();
 });
 

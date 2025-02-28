@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/utils/constants/app_strings.dart';
-import 'package:windsurf_test/core/routes/app_routes.dart';
+import 'package:basic_app/core/utils/constants/app_strings.dart';
+import 'package:basic_app/core/routes/app_routes.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});

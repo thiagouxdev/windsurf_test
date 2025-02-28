@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:windsurf_test/core/utils/constants/app_strings.dart';
-import 'package:windsurf_test/core/providers/language_provider.dart';
-import 'package:windsurf_test/core/providers/theme_provider.dart';
-import 'package:windsurf_test/core/routes/app_routes.dart';
-import 'package:windsurf_test/core/utils/theme/app_theme.dart';
+import 'package:basic_app/core/utils/constants/app_strings.dart';
+import 'package:basic_app/core/providers/language_provider.dart';
+import 'package:basic_app/core/providers/theme_provider.dart';
+import 'package:basic_app/core/routes/app_routes.dart';
+import 'package:basic_app/core/utils/theme/app_theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

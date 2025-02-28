@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/navigation/root_navigation.dart';
-import 'package:windsurf_test/features/notifications/views/notifications_page.dart';
-import 'package:windsurf_test/features/welcome/views/welcome_page.dart';
-import 'package:windsurf_test/features/splash/views/splash_screen.dart';
+import 'package:basic_app/core/navigation/root_navigation.dart';
+import 'package:basic_app/features/notifications/views/notifications_page.dart';
+import 'package:basic_app/features/welcome/views/welcome_page.dart';
+import 'package:basic_app/features/splash/views/splash_screen.dart';
 
 class AppRoutes {
   static const String splash = '/splash';
