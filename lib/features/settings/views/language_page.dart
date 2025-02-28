@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:windsurf_test/core/components/custom_search_bar.dart';
-import 'package:windsurf_test/core/constants/app_strings.dart';
+import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/core/providers/language_provider.dart';
 
 class LanguagePage extends ConsumerStatefulWidget {

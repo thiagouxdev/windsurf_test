@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:windsurf_test/core/constants/app_strings.dart';
+import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/core/providers/language_provider.dart';
 import 'package:windsurf_test/core/providers/theme_provider.dart';
 import 'package:windsurf_test/core/routes/app_routes.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         builder: (context, ref, _) {
           final themeMode = ref.watch(themeProvider);
           final language = ref.watch(languageProvider);
-          
+
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: AppStrings.appName,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:windsurf_test/core/constants/app_strings.dart';
+import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/core/providers/theme_provider.dart';
 
 class ThemePage extends ConsumerWidget {

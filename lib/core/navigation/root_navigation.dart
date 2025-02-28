@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/constants/app_strings.dart';
+import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/core/routes/app_routes.dart';
 import 'package:windsurf_test/features/home/views/home_page.dart';
 import 'package:windsurf_test/features/favorites/views/favorites_page.dart';
@@ -37,13 +37,13 @@ class _RootNavigationState extends State<RootNavigation> {
   @override
   Widget build(BuildContext context) {
     // Get translated titles
-    final List<String> _titles = [
+    final List<String> titles = [
       AppStrings.getHome(context),
       AppStrings.getMessages(context),
       AppStrings.getFavorites(context),
       AppStrings.getSettings(context),
     ];
-    
+
     return Scaffold(
       appBar: AppBar(
         leading: Builder(
@@ -59,7 +59,7 @@ class _RootNavigationState extends State<RootNavigation> {
             ),
           ),
         ),
-        title: Text(_titles[_selectedIndex]),
+        title: Text(titles[_selectedIndex]),
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications_outlined),
@@ -80,22 +80,22 @@ class _RootNavigationState extends State<RootNavigation> {
           NavigationDestination(
             icon: const Icon(Icons.home_outlined),
             selectedIcon: const Icon(Icons.home),
-            label: _titles[0],
+            label: titles[0],
           ),
           NavigationDestination(
             icon: const Icon(Icons.message_outlined),
             selectedIcon: const Icon(Icons.message),
-            label: _titles[1],
+            label: titles[1],
           ),
           NavigationDestination(
             icon: const Icon(Icons.favorite_border),
             selectedIcon: const Icon(Icons.favorite),
-            label: _titles[2],
+            label: titles[2],
           ),
           NavigationDestination(
             icon: const Icon(Icons.settings_outlined),
             selectedIcon: const Icon(Icons.settings),
-            label: _titles[3],
+            label: titles[3],
           ),
         ],
       ),

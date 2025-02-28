@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:windsurf_test/core/constants/app_strings.dart';
+import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/features/settings/components/section_header.dart';
 import 'package:windsurf_test/features/settings/views/language_page.dart';
 import 'package:windsurf_test/features/settings/views/theme_page.dart';
