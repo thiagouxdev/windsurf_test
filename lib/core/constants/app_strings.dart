@@ -98,4 +98,27 @@ class AppStrings {
   // Drawer
   static const String logout = 'Sair';
   static String getLogout(BuildContext context) => AppTranslations.translate(context, 'logout');
+  
+  // Status Pages
+  static const String success = 'Sucesso';
+  static String getSuccess(BuildContext context) => AppTranslations.translate(context, 'success');
+  
+  static const String error = 'Erro';
+  static String getError(BuildContext context) => AppTranslations.translate(context, 'error');
+  
+  static const String tryAgain = 'Tentar novamente';
+  static String getTryAgain(BuildContext context) => AppTranslations.translate(context, 'tryAgain');
+  
+  static const String continue_ = 'Continuar';
+  static String getContinue(BuildContext context) => AppTranslations.translate(context, 'continue');
+  
+  static const String goBack = 'Voltar';
+  static String getGoBack(BuildContext context) => AppTranslations.translate(context, 'goBack');
+  
+  static const String loading = 'Carregando...';
+  static String getLoading(BuildContext context) => AppTranslations.translate(context, 'loading');
+  
+  // Feature Page
+  static const String register = 'Faça seu cadastro';
+  static String getRegister(BuildContext context) => AppTranslations.translate(context, 'register');
 }
