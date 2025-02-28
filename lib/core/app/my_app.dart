@@ -5,7 +5,7 @@ import 'package:windsurf_test/core/utils/constants/app_strings.dart';
 import 'package:windsurf_test/core/providers/language_provider.dart';
 import 'package:windsurf_test/core/providers/theme_provider.dart';
 import 'package:windsurf_test/core/routes/app_routes.dart';
-import 'package:windsurf_test/core/theme/app_theme.dart';
+import 'package:windsurf_test/core/utils/theme/app_theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
