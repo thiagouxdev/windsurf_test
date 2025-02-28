@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static ThemeData _baseTheme(Brightness brightness) {
     return ThemeData(
+      textTheme: GoogleFonts.interTextTheme(),
       colorScheme: ColorScheme.fromSeed(
-        seedColor: Colors.orange,
+        seedColor: Colors.teal,
         brightness: brightness,
       ),
       dividerTheme: const DividerThemeData(
